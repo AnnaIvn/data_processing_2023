@@ -29,7 +29,7 @@ public class JsonServlet extends HttpServlet
         PrintWriter out = response.getWriter();
 
         //out.print(someJson);    // printing out entity through gson
-        out.println(entityList);
+        out.print(entityList);
         out.flush();
     }
 

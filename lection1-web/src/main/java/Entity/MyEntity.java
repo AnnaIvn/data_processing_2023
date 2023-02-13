@@ -1,7 +1,10 @@
 package Entity;
 
-public class MyEntity
+import java.io.Serializable;
+
+public class MyEntity implements Serializable
 {
+    private static final long serialVersionUID = 1L;
     private String name, photo;
     private float weight, length;
 

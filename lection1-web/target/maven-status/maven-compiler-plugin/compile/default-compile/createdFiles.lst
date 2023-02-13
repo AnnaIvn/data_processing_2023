@@ -1,3 +1,6 @@
-Servlets\HelloServlet.class
-Entity\MyEntity.class
+Crud\Lab2CrudInterface.class
 Servlets\JsonServlet.class
+Servlets\EntityServlet.class
+Servlets\ServletConfigInterface.class
+Servlets\ServletConfig.class
+Entity\MyEntity.class
