@@ -9,7 +9,7 @@ import { Service1Service } from './services/service1.service';
 })
 export class AppComponent {
   title = 'lab1f';
-  entityList:Entity[]=[];    // entity array, that we'll resieve from our service
+  entityList:Entity[]=[];    // entity array, that we'll recieve from our service
 
   // from services folder
   constructor(private service:Service1Service){}

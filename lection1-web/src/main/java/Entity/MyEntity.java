@@ -40,4 +40,17 @@ public class MyEntity
     public String getPhoto() { return photo; }
 
     public void setPhoto(String photo) { this.photo = photo; }
+
+    @Override
+    public String toString()
+    {
+        return "MyEntity{" +
+                "name='" + name + '\'' +
+                ", photo='" + photo + '\'' +
+                ", weight=" + weight +
+                ", length=" + length +
+                '}';
+    }
+
+
 }
