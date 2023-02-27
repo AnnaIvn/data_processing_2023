@@ -24,7 +24,7 @@ public class JsonServlet extends HttpServlet
 
         String someJson = new Gson().toJson(entityList);
 
-        response.setContentType("application/json");   // відповіда тому, що ми передаємо json
+        response.setContentType("application/json");   // відповідає тому, що ми передаємо json
         response.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
 

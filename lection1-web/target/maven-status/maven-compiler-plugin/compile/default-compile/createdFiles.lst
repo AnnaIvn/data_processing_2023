@@ -1,6 +1,10 @@
+Crud\FileCrud.class
 Crud\Lab2CrudInterface.class
+FileIO\FileIOInterface.class
+FileIO\Main.class
+Servlets\ServletConfig.class
+Entity\MyEntity.class
+FileIO\FileIO.class
 Servlets\JsonServlet.class
 Servlets\EntityServlet.class
 Servlets\ServletConfigInterface.class
-Servlets\ServletConfig.class
-Entity\MyEntity.class
