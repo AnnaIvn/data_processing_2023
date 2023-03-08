@@ -37,8 +37,8 @@ public class Helpers {
     }
 
 
-    
-    public static int getNextId(List<MyEntity> list) {
+    // do not need it here, have no id
+    /*public static int getNextId(List<MyEntity> list) {
         int maxId = 0;
         Iterator<MyEntity> iterator = list.iterator();
 
@@ -51,12 +51,12 @@ public class Helpers {
         return maxId + 1;
     }
 
-    public static int getIndexByUserId(int id, List<User> list) {
+    public static int getIndexByEntityId(int id, List<MyEntity> list) {
         int listId = id;
-        Iterator<User> iterator = list.iterator();
+        Iterator<MyEntity> iterator = list.iterator();
 
         while(iterator.hasNext()) {
-            User temp = (User)iterator.next();
+            MyEntity temp = (MyEntity) iterator.next();
             if (temp.getId() == listId) {
                 listId = list.indexOf(temp);
                 break;
@@ -64,5 +64,5 @@ public class Helpers {
         }
 
         return listId;
-    }
+    }*/
 }

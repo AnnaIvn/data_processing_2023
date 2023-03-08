@@ -16,6 +16,10 @@ public class MyEntity implements Serializable
         this.length = length;
     }
 
+    public MyEntity()
+    {
+    }
+
     public String getName() {
         return name;
     }
