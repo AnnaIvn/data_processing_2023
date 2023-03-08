@@ -5,59 +5,58 @@ import java.io.Serializable;
 public class MyEntity implements Serializable
 {
     private static final long serialVersionUID = 1L;
-    private String name, photo;
-    private float weight, length;
+    private int id;
+    private String name;
+    private int weight;
 
-    public MyEntity(String name, String photo, float weight, float length)
+    public MyEntity(int id, String name, int weight)
     {
+        this.id = id;
         this.name = name;
-        this.photo = photo;
         this.weight = weight;
-        this.length = length;
     }
 
     public MyEntity()
     {
     }
 
-    public String getName() {
+    public int getId()
+    {
+        return id;
+    }
+
+    public void setId(int id)
+    {
+        this.id = id;
+    }
+
+    public String getName()
+    {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name)
+    {
         this.name = name;
     }
 
-    public float getWeight() {
+    public int getWeight()
+    {
         return weight;
     }
 
-    public void setWeight(float weight) {
+    public void setWeight(int weight)
+    {
         this.weight = weight;
     }
-
-    public float getLength() {
-        return length;
-    }
-
-    public void setLength(float length) {
-        this.length = length;
-    }
-
-    public String getPhoto() { return photo; }
-
-    public void setPhoto(String photo) { this.photo = photo; }
 
     @Override
     public String toString()
     {
         return "MyEntity{" +
-                "name='" + name + '\'' +
-                ", photo='" + photo + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", weight=" + weight +
-                ", length=" + length +
                 '}';
     }
-
-
 }

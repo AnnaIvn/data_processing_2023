@@ -1,3 +1,5 @@
+// for lab 4
+
 package Servlets;
 
 import Entity.MyEntity;
@@ -29,16 +31,14 @@ public class Helpers {
     public static MyEntity entityParse(HttpServletRequest request) {
         MyEntity entity = new MyEntity();
         JsonElement jsonElement = bodyParse(request);
+        entity.setId(jsonElement.getAsJsonObject().get("id").getAsInt());
         entity.setName(jsonElement.getAsJsonObject().get("name").getAsString());
-        entity.setPhoto(jsonElement.getAsJsonObject().get("photo").getAsString());
-        entity.setWeight(jsonElement.getAsJsonObject().get("weight").getAsFloat());
-        entity.setLength(jsonElement.getAsJsonObject().get("length").getAsFloat());
+        entity.setWeight(jsonElement.getAsJsonObject().get("weight").getAsInt());
         return entity;
     }
 
 
-    // do not need it here, have no id
-    /*public static int getNextId(List<MyEntity> list) {
+    public static int getNextId(List<MyEntity> list) {
         int maxId = 0;
         Iterator<MyEntity> iterator = list.iterator();
 
@@ -64,5 +64,5 @@ public class Helpers {
         }
 
         return listId;
-    }*/
+    }
 }

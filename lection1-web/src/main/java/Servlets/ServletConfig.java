@@ -1,4 +1,4 @@
-package Servlets;
+/*package Servlets;
 
 import Crud.FileCrud;
 import Crud.Lab2CrudInterface;
@@ -21,4 +21,4 @@ public class ServletConfig implements ServletConfigInterface
     public Lab2CrudInterface getCrud(){
         return l2ci;     // під'єднали (інший) інтерфейс до метода getCrud
     }
-}
+}*/

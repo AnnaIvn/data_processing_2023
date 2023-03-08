@@ -1,4 +1,4 @@
-package FileIO;
+/*package FileIO;
 
 import Entity.MyEntity;
 
@@ -13,4 +13,4 @@ public class Main
         fio.saveToFile(entity);
         System.out.println((MyEntity) fio.loadFromFile());
     }
-}
+}*/
