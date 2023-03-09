@@ -1,0 +1,26 @@
+<p>{{title}}</p>
+<ul>
+    <!-- list of entities -->
+    <li
+     *ngFor="let u of entitiesList">
+     (click)="onSelect(u)"                                     
+     Name: {{u.name}}  Image: {{u.photo}}  Weight: {{u.weight}}  Length: {{u.length}}        
+     <span (click)="deleteEntity(u)">    X </span><br>            <!-- element for entity deletion -->
+    </li>
+</ul>
+
+<h3 (click)="showAddForm=!showAddForm">Add sleeping bag</h3>      <!-- for showing/hiding form: (click)="showAddForm=!showAddForm", при кліку - значення на протилежне -->
+<form *ngIf="showAddForm" #form1="ngForm" (ngSubmit)="addEntity(form1.value)">    <!-- for sh/hi form: *ngIf="showAddForm", бере те значення-->
+    <input type="hidden" name="name" value="" ngModel>
+    <input type="text" name="photo" value="" 
+    ngModel><br><br>
+    <input type="number" name="weight" value="11" 
+    ngModel><br><br>
+    <input type="number" name="length" value="13" 
+    ngModel><br><br>
+    <input type="submit" value="Add bag">
+</form>
+
+<app-update [entity]="selectedEntity" (updated)="updateEntities()"></app-update>
+
+

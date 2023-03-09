@@ -1,0 +1,11 @@
+<div *ngIf="entity">
+    <h3>Update sleeping bag</h3>
+
+    <!-- binding our input with name field of an Entity-->
+    <input type="hidden" [(ngModel)]="entity.name">            
+    <input type="text" [(ngModel)]="entity.photo"><br><br>              
+    <input type="number" [(ngModel)]="entity.weight"><br><br>            
+    <input type="number" [(ngModel)]="entity.length"><br><br>            
+    <button (click)="updateEntity()">Update bag</button><br><br>              <!-- button -->
+</div>
+
