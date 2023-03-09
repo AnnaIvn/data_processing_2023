@@ -1,6 +1,0 @@
-Servlets\LabCRUDInterface.class
-Servlets\Helpers.class
-jdbc\SqlCrud.class
-jdbc\Connect.class
-Servlets\Servlet1.class
-Entity\MyEntity.class
