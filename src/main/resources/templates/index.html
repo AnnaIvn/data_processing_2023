@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Main page</h1>
+    <a href="add_bag" class="add">Add new sleeping bag</a>
+    <br>
+    <a href="update_bag" class="add">Update sleeping bag</a>
+    <table cellpadding="20">
+        <thead>
+            <tr>
+                <th>Bag ID</th>
+                <th>Name</th>
+                <th>Length</th>
+                <th>Photo</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="bag : ${listBags}">
+            <td th:text="${bag.id}">Bag ID</td>
+            <td th:text="${bag.name}">Name</td>
+            <td th:text="${bag.length}">Length</td>
+            <td><img th:src="${bag.photo}" width="150" height="150"></td>
+            <td>
+                <a th:href="@{/update/{id}(id=${bag.id})}">Update</a>          <!--@ - to work with url-->
+                <a th:href="@{/delete/{id}(id=${bag.id})}">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

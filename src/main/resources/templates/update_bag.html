@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Bag</title>
+  <link rel="stylesheet" th:href="@{/css/index.css}">
+</head>
+<body>
+<div>
+    <h1>Update Sleeping Bag</h1>
+    <br>
+    <form action="#" th:action="@{/new}" th:object="${bag}" method="post">
+        <table cellpadding="10">
+            <tr>
+                <td>Bag ID:</td>
+                <td><input type="text" th:field="*{id}" readonly="readonly"/></td>
+            </tr>
+
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" th:field="*{name}"/></td>
+            </tr>
+
+            <tr>
+                <td>Length: </td>
+                <td><input type="text" th:field="*{length}"/></td>
+            </tr>
+
+            <tr>
+                <td>Photo: </td>
+                <td><input type="text" th:field="*{photo}"/></td>
+            </tr>
+
+            <tr>
+                <td><button type="submit">Update</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<a href="index.html">Go to main page</a>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Bag</title>
+  <link rel="stylesheet" th:href="@{/css/index.css}">
+</head>
+<body>
+
+<div>
+  <h1>Add new sleeping bag</h1>
+  <br>
+  <form action="#" th:action="@{/add}" th:object="${/bag}" method="post">
+    <table cellpadding="10">
+      <tr>
+        <td>Name: </td>
+        <td><input type="text" th:field="*{name}"/></td>      <!-- * - selection expression -->
+      </tr>
+
+      <tr>
+        <td>Length: </td>
+        <td><input type="number" th:field="*{length}"/></td>
+      </tr>
+
+      <tr>
+        <td>Photo: </td>
+        <td><input type="text" th:field="*{photo}"/></td>
+      </tr>
+
+      <tr>
+        <td><button type="submit">Add</button></td>
+      </tr>
+    </table>
+  </form>
+
+  <a href="index.html">Go to main page</a>
+
+</div>
+
+
+</body>
+</html>
