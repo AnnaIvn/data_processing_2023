@@ -1,0 +1,37 @@
+$main-color: rgb(81, 18, 18);
+$color2: white;
+$color3: rgb(147, 214, 24);
+
+*{
+    padding: 15px 0 15px 0;
+    font-size: 30px;
+}
+
+h3{
+    font-size: 30px;
+    cursor: pointer;
+    span{
+        color: $color3;
+    }
+    span:hover{
+        color: black;
+    }
+}
+
+.form{
+    input{
+        cursor: pointer;
+        font-size: 25px;
+        padding: 10px 40px;
+        border-radius: 30px;
+    }
+    button{
+        font-size: 25px;
+        padding: 5px 15px;
+        cursor: pointer;
+        color: $color2;
+        background-color: $color3;
+        border-radius: 25px;
+        border-color: $color3;
+    }
+}

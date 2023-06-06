@@ -1,0 +1,20 @@
+$main-color: rgb(81, 18, 18);
+$color2: white;
+
+*{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: $main-color;
+    color: $color2;
+    text-align: left;
+}
+
+.footer{
+    padding: 40px 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1.5rem;
+    .box{
+        padding: 0 40px;
+    }
+}
