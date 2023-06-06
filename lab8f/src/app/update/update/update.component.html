@@ -1,0 +1,12 @@
+<div *ngIf="entity">
+
+    <h3><span>Update</span> some baggies</h3>
+    <div class="form">
+        <input type="hidden" [(ngModel)]="entity.id">
+        <input type="text" [(ngModel)]="entity.name" placeholder="Name"><br><br>
+        <input type="number" [(ngModel)]="entity.length" placeholder="Length"><br><br>
+        <input type="number" [(ngModel)]="entity.temperature" placeholder="Temperature Rating"><br><br>
+        <input type="text" [(ngModel)]="entity.photo" placeholder="Photo"><br><br>
+        <button (click)="updateEntities()">Update</button>
+    </div>
+</div>
