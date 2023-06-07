@@ -2,8 +2,8 @@
     <div class="top">
         <span>Id</span>
         <span>Name</span>
-        <span>Length</span>
-        <span>Temperature</span>
+        <span>Length (m)</span>
+        <span>Temperature (C)</span>
         <span>Photo</span>
     </div>
     <ul class="list">
@@ -12,8 +12,8 @@
             <span>{{u.name}}.</span>
             <span>{{u.length}}.</span>
             <span>{{u.temperature}}.</span>
-            <!-- <img src="{{u.photo}}" alt="" width="100" height="250"> -->
-            <span>{{u.photo}}</span>
+            <img src="../assets/{{u.photo}}" alt="" width="200" height="350">
+            <!-- <span>{{u.photo}}</span> -->
             <span (click)="deleteEntities(u)" class="delBtn">Delete</span>
         </li>
     </ul>
